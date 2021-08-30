@@ -5,7 +5,7 @@ from ImageManager import ImageManager
 
 def main():
 
-    path = input("Enter path of folder caper: ") #'/Users/abhisheksingh/Desktop/caper/'
+    path = input("Enter path of folder: ") #'/Users/abhisheksingh/Desktop/image_data_management/'
 
     client=ImageStorageClient(path)
 
