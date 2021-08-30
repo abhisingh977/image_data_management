@@ -7,6 +7,7 @@ The Architecture of the data storage system is show below.
 I am using GCP cloud storage and firestore for saving images and respective metadata.
 
 I have made number of assumption while making building the storage system.
+
 1. I am reciving the images in data/images folder and csv file containing metadata about the images.
 
 2. The storage is suppose to be on cloud.(I decided to use GCP).
@@ -14,7 +15,9 @@ I have made number of assumption while making building the storage system.
 
 
 auth :- It contains josn file required for Authentication for connecting with cloud.
+
 data:- This contian data recived from frontend(images,csv).
+
 downloaded_img:- The storage location where the images are being downloaded from cloud.
 
 src:- This folder contains all the code.
@@ -24,6 +27,7 @@ demo.py:- This is the py file contaning the main(). It also contain option to ch
 ImageManager.py:- This  file manages class handeling Authentication and connection with the cloud storage and firestore.
 
 ImageStorageClient.py:- This file have all the task fuction such as upload, download and read.
+
 ---------------------------------------------------
 
 
