@@ -53,7 +53,7 @@ class ImageStorageClient():
         for i in data:
             blob = self.bucket.blob("{}.jpg".format(i['Unique_id']))
             blob.content_type = "image/jpeg"
-            my_file = Path(i['path'])
+            my_file = Path(self.local_location+'/'+i['path'])
             
             if my_file.is_file(): 
                  
