@@ -29,18 +29,20 @@ ImageStorageClient.py:- This file have all the task fuction such as upload, down
 
 Running the code:- 
 
-Steps required to run and test this code.
+#Steps required to run and test this code.
 
-Creating virtual env
+#Creating virtual env
 
 conda create -n caper python=3.8
 
-Activate env
+#Activate env
+
 conda activate caper
 
-install relevant packages 
+#install relevant packages 
 
 pip install --upgrade firebase-admin
+
 pip install --upgrade google-cloud-storage
 
 
@@ -51,22 +53,16 @@ pip install --upgrade google-cloud-storage
 
 3. python src/demo.py
 
-"""
-Enter path of folder:
-"""
+4. Enter path of folder:/././image_data_management/
 
-/././image_data_management/
+Options: 
 
-
-
-"""
 Update storage: Press 1 
             
 Read stored data: Press 2
             
 Download images: Press 3
  
-"""
 
 
 -------------------------------------------------------
