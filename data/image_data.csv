@@ -1,0 +1,12 @@
+name,store_id,camera_id,barcode_info(cost),time_stamp,path,Unique_id
+apple,1,1,4,"8/29/21, 12:19 PM",/Users/abhisheksingh/Desktop/caper/data/images/apple.png,dsvawkvbejkvbeverv
+banana,2,1,2,"8/23/21, 1:34 AM",/Users/abhisheksingh/Desktop/caper/data/images/Banana.jpeg,fvevkebfkvebfkvnefkv
+bread,1,2,5,"7/15/21, 3:19 PM",/Users/abhisheksingh/Desktop/caper/data/images/bread.jpeg,onikenkfvberiuvbeivbe
+curry,1,1,6,"3/23/21, 8:05 PM",/Users/abhisheksingh/Desktop/caper/data/images/curry.jpeg,wvrkjkjvnkeioihwefnkjn
+icecream,2,2,10,"5/13/21, 1:50 AM",/Users/abhisheksingh/Desktop/caper/data/images/icecream.jpeg,sdvbkbvwowivnslnvlvns
+mac,2,3,5,"4/10/21, 1:34 PM",/Users/abhisheksingh/Desktop/caper/data/images/mac.jpeg,wbdjvkjsbviwbvwoouvwh
+onion,2,3,3,"8/24/21, 7:19 AM",/Users/abhisheksingh/Desktop/caper/data/images/onion.jpeg,nerjgnerbgkwejbhwbfhrbr
+orange,2,2,4,"8/23/21, 1:34 PM",/Users/abhisheksingh/Desktop/caper/data/images/orange.jpeg,wkjgbrehkgbhvbsergkhber
+pasta,1,1,8,"1/18/21, 4:24 PM",/Users/abhisheksingh/Desktop/caper/data/images/pasta.jpeg,uerhfuwnveknvppwqgwekj
+pork,1,3,9,"7/8/21, 3:17 PM",/Users/abhisheksingh/Desktop/caper/data/images/pork.jpeg,dfvvnworvjrvnberjntujioued
+thai,2,3,5,"8/14/21, 6:38 PM",/Users/abhisheksingh/Desktop/caper/data/images/thai.jpeg,efnbkjrenbgekjrnbkjtenbkjtb
