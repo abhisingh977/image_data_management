@@ -9,15 +9,17 @@ import csv
 This class contain fuction to perform task.
 '''
 class ImageStorageClient():
-
+    #Initialization of image manager methods and path
     def __init__(self,local_location):
         self.ImageManager= ImageManager(local_location)
         self.local_location = local_location
         self.bucket = self.ImageManager.bucket()
         self.db,self.batch = self.ImageManager.db()
-        
+
+    #read the data from the frontend in csv
     def read_csv(self):
         path_csv = self.local_location+'/data' 
+        #read all the csv file that exsit
         csv_files = glob.glob(os.path.join(path_csv, "*.csv"))
         self.image_list=[]
         for f in csv_files:
@@ -48,8 +50,7 @@ class ImageStorageClient():
                 return False
 
     def upload_bucket(self,data):
-
-        #bucket=self.ImageManager.bucket()
+        #Upload the images from frontend to the google cloud bucket
         for i in data:
             blob = self.bucket.blob("{}.jpg".format(i['Unique_id']))
             blob.content_type = "image/jpeg"
@@ -66,6 +67,7 @@ class ImageStorageClient():
 
 
     def upload_info(self):
+        #Upload the images metadata from frontend to the google cloud firestore
         self.data = self.read_csv()
         for i in self.data:
             doc = self.db.document(i['Unique_id'])
@@ -76,18 +78,19 @@ class ImageStorageClient():
             'barcode_info(cost)': i['barcode_info(cost)'],
             'time_stamp': i['time_stamp']
                                 })
-
+        #process the metadata in batches
         self.batch.commit()
         self.upload_bucket(self.data)
 
 
     def download_blob(self,source_blob_name, destination_file_name):
         """Downloads a blob from the bucket."""
-        
         blob = self.bucket.blob(source_blob_name+'.jpg')
         blob.download_to_filename(destination_file_name+'.jpg')
-
-        print("Downloaded storage object to local file.")
+        print(destination_file_name+'.jpg')
+        
+        #self.make_google_storage_blob_public(blob)
+       
 
     def download_local(self,dest):
         docs = self.db.stream()

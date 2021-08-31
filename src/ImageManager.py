@@ -10,6 +10,7 @@ This class manages the Authentication and connection with cloud storages.
 '''
 
 class ImageManager():
+    #Initialize name and path
     def __init__(self,path):
         self.project='graceful-smithy-324300'
         self.auth= path+'auth/graceful-smithy-324300-38b121953fd6.json'
@@ -17,17 +18,18 @@ class ImageManager():
         self.database = 'caper-data'
 
     def bucket(self):
+        #Authorization and connection of with cloud bucket
         with open(self.auth) as source:
             info = json.load(source)
 
         storage_credentials = service_account.Credentials.from_service_account_info(info)
         storage_client = storage.Client(project=self.project, credentials=storage_credentials)
-        self.bucket = storage_client.get_bucket(self.bucket_name)
+        self.bucket_info = storage_client.get_bucket(self.bucket_name)
 
-        return self.bucket
+        return self.bucket_info
 
     def db(self):  
-
+        #Authorization and connection of with cloud firestore
         cred = credentials.Certificate(self.auth)
 
         firebase_admin.initialize_app(cred, {
