@@ -70,6 +70,15 @@ pip install --upgrade google-cloud-storage
  
  
 -------------------------------------------------------
+
+ Future improvements:-
+ 
+ 1. Query function :- For querying NoSql database based on feature value like Store, Camera, Product.
+
+ 2. Batch update :- Bacth update of multimedia is not available in google cloud storage as of now. 
+ 
+ 
+ 
  
  
 # Feel free to ask any question or doubt.
