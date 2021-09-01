@@ -1,4 +1,4 @@
-# image_data_management
+# Image Data Management
 
 The Architecture of the data storage system is shown below.
 ![alt image here](flow.png)
@@ -58,7 +58,7 @@ pip install --upgrade google-cloud-storage
  
 3. python src/demo.py
  
-4. Enter the path of folder:/././image_data_management/
+4. Enter the path of folder: /././image_data_management/
  
 ## Options:
  
