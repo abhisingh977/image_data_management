@@ -77,7 +77,9 @@ pip install --upgrade google-cloud-storage
 
  2. Batch update :- Bacth update of multimedia is not available in google cloud storage as of now. 
  
- 
+ 3. Data privacy :- Data is public for now for better access. Need to be private in production.
+
+4. Key privacy:- Hide the key when in production.
  
  
  
