@@ -9,7 +9,7 @@ I am using GCP cloud storage and Firestore for saving images and respective meta
  
 I have made a number of assumptions while building the storage system.
  
-1. I am receiving the images in the data/images folder and a csv file containing metadata about the images.
+1. I am receiving the images in the data/images folder and a csv file containing metadata about the images(This part can be modified easily based on how we are receiving data).
  
 2. The storage is supposed to be on cloud.(I decided to use GCP).
 --------------------------------------
@@ -32,19 +32,19 @@ ImageStorageClient.py:- This file have all the task function such as upload, dow
 ---------------------------------------------------
  
  
-Running the code:-
+## Running the code:-
  
-#Steps required to run and test this code.
+### Steps required to run and test this code.
  
-#Creating virtual env
+### Creating virtual env
  
 conda create -n caper python=3.8
  
-#Activate env
+### Activate env
  
 conda activate caper
  
-#install relevant packages
+### Install relevant packages
  
 pip install --upgrade firebase-admin
  
@@ -60,17 +60,17 @@ pip install --upgrade google-cloud-storage
  
 4. Enter the path of folder:/././image_data_management/
  
-Options:
+## Options:
  
-Update storage: Press 1
+### Update storage: Press 1
           
-Read stored data: Press 2
+### Read stored data: Press 2
           
-Download images: Press 3
+### Download images: Press 3
  
  
 -------------------------------------------------------
  
  
-Feel free to ask any question or doubt.
+# Feel free to ask any question or doubt.
  
