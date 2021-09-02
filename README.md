@@ -1,4 +1,4 @@
-# image_data_management
+# Image Data Management
 
 The Architecture of the data storage system is shown below.
 ![alt image here](flow.png)
@@ -9,7 +9,7 @@ I am using GCP cloud storage and Firestore for saving images and respective meta
  
 I have made a number of assumptions while building the storage system.
  
-1. I am receiving the images in the data/images folder and a csv file containing metadata about the images.
+1. I am receiving the images in the data/images folder and a csv file containing metadata about the images(This part can be modified easily based on how we are receiving data).
  
 2. The storage is supposed to be on cloud.(I decided to use GCP).
 --------------------------------------
@@ -32,19 +32,19 @@ ImageStorageClient.py:- This file have all the task function such as upload, dow
 ---------------------------------------------------
  
  
-Running the code:-
+## Running the code:-
  
-#Steps required to run and test this code.
+### Steps required to run and test this code.
  
-#Creating virtual env
+### Creating virtual env
  
 conda create -n caper python=3.8
  
-#Activate env
+### Activate env
  
 conda activate caper
  
-#install relevant packages
+### Install relevant packages
  
 pip install --upgrade firebase-admin
  
@@ -58,18 +58,19 @@ pip install --upgrade google-cloud-storage
  
 3. python src/demo.py
  
-4. Enter the path of folder:/././image_data_management/
+4. Enter the path of folder: /././image_data_management/
  
-Options:
+## Options:
  
-Update storage: Press 1
+### Update storage: Press 1
           
-Read stored data: Press 2
+### Read stored data: Press 2
           
-Download images: Press 3
+### Download images: Press 3
  
  
 -------------------------------------------------------
+<<<<<<< HEAD
  ## Cloud storage of images. 
 
 ![alt image here](google_cloud_storage.png)
@@ -83,6 +84,20 @@ Download images: Press 3
 
 
  -------------------------------------------------------
+=======
+
+ Future improvements:-
  
-Feel free to ask any question or doubt.
+ 1. Query function :- For querying NoSql database based on feature value like Store, Camera, Product.
+
+ 2. Batch update :- Bacth update of multimedia is not available in google cloud storage as of now. 
+ 
+ 3. Data privacy :- Data is public for now for better access. Need to be private in production.
+
+4. Key privacy:- Hide the key when in production.
+ 
+ 
+>>>>>>> 8994316ddc036c172b8f64f066c6ec6328c854cb
+ 
+# Feel free to ask any question or doubt.
  
