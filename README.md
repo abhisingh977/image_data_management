@@ -70,7 +70,19 @@ Download images: Press 3
  
  
 -------------------------------------------------------
- 
+ ## Cloud storage of images. 
+
+![alt image here](google_cloud_storage.png)
+
+
+
+ ## Firestore storage of metadata. 
+
+![alt image here](firestore.png)
+
+
+
+ -------------------------------------------------------
  
 Feel free to ask any question or doubt.
  
