@@ -70,7 +70,6 @@ pip install --upgrade google-cloud-storage
  
  
 -------------------------------------------------------
-<<<<<<< HEAD
  ## Cloud storage of images. 
 
 ![alt image here](google_cloud_storage.png)
@@ -84,7 +83,6 @@ pip install --upgrade google-cloud-storage
 
 
  -------------------------------------------------------
-=======
 
  Future improvements:-
  
@@ -97,7 +95,6 @@ pip install --upgrade google-cloud-storage
 4. Key privacy:- Hide the key when in production.
  
  
->>>>>>> 8994316ddc036c172b8f64f066c6ec6328c854cb
  
 # Feel free to ask any question or doubt.
  
