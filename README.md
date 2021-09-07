@@ -15,7 +15,7 @@ I have made a number of assumptions while building the storage system.
 --------------------------------------
  
  
-auth :- It contains the json file required for Authentication for connecting with the cloud.
+auth :- It contains the json file required for Authentication for connecting with the cloud (You need to genrate your own service key for running the code).
  
 data:- This contains data received from frontend(images,csv).
  
